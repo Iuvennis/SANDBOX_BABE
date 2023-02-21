@@ -5,20 +5,21 @@
 using namespace std;
 
 class Man {
-	string name;
-	string lname;
-	int age;
-	int height;
+public:
+		string name;
+		string lname;
+		int age;
+		int height;
 
-	void set_data(string n, string ln, int a, int h) {
-		name = n;
-		lname = ln;
-		age = a;
-		height = h;
-	}
-	void get_data() {
-		cout << name << lname << age << height;
-	}
+		void set_data(string n, string ln, int a, int h) {
+			name = n;
+			lname = ln;
+			age = a;
+			height = h;
+		}
+		void get_data() {
+			cout << name << endl << lname << endl << age << endl << height << endl;
+		}
 };
 
 int main() {
@@ -30,6 +31,6 @@ int main() {
 	Vasya.set_data("Vasiliy", "Rurikovich", 33, 168);
 	Petya.set_data("Petr", "Romanov", 27, 207);
 
-	Vasya.get_data;
-	Petya.get_data;
+	Vasya.get_data();
+	Petya.get_data();
 }
